@@ -1,0 +1,5 @@
+@import "bourbon";
+
+@include font-face("SeroPro", "../fonts/SeroPro/SeroPro", 400 , normal , $file-formats: eot woff ttf svg);
+@include font-face("SeroPro", "../fonts/SeroPro-Bold/SeroPro-Bold", 700 , normal , $file-formats: eot woff ttf svg);
+@include font-face("SeroPro", "../fonts/SeroPro-Black/SeroPro-Black", 900 , normal , $file-formats: eot woff ttf svg);
