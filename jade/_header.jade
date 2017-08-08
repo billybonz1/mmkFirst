@@ -3,26 +3,26 @@ header
         .inner
             .container-fluid
                 .row
-                    .col-md-6
+                    .col-md-6.col-xs-12
                         a(href="#").logo
                             img(src="/img/logo.png")
-                    .col-md-6(style="text-align: right;")
+                    .col-md-6(style="text-align: right;").col-md-6.col-xs-12
                         .header__contacts
                             a.header__phone(href="tel:+7 775 511 11 13") +7 775 511 11 13
                             a.header__email(href="mailto:info@mmkcompany.kz") info@mmkcompany.kz
                         a.btn.header__btn(href="#") Заказать звонок
                 .header__title.row
-                    .col-md-6
+                    .col-md-6.col-xs-12
                         h1
                             | Профессиональное
                             br
                             | изготовление
                             br
                             | макетов в Казахстане
-                    .col-md-6(style="text-align: right")
+                    .col-md-6(style="text-align: right").col-xs-12
                         a.btn.btn_blue(href="#") Заказать разработку макета
                 .header__adv.row
-                    .col-md-12
+                    .col-md-12.col-xs-12
                         .header__adv__item
                             | Изготовление от
                             strong 6 дней
@@ -35,4 +35,38 @@ header
                         .header__adv__item
                             | Доставка по РК
                             strong бесплатно
+        .circle-bord
+          img(src='img/cal.png')
+    .form-know
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        .number-abs
+                            .line-back
+                            .circle-number
+                                p 1
+                        .coast
+                            h2 Узнайте стоимость и сроки изготовления<br> Вашего макета
+                            .form-cost
+                                form
+                                    input(placeholder='Введите Ваше имя' id='name' required=)
+                                    input(placeholder='Введите Ваше имя' id='phone' required=)
+                                    button(class='btn btn_blue' name='send') Отправить
+                        .proposal
+                            ul
+                                li
+                                  h3 1
+                                  p Мы расскажем про особенности материалов<br> и предложим варианты решений
+
+                                li
+                                  h3 2
+                                  p Мы расскажем про особенности материалов<br> и предложим варианты решений
+
+
+                                li
+                                  h3 3
+                                  p Проанализируем ваш проект и<br> спрогнозируем сроки и стоимость
+
+
 
