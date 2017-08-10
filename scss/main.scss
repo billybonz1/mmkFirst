@@ -13,26 +13,250 @@ $hamburger-layer-color: #000;
 
 
 
+.title-all{
+  margin-top: 64px;
+  position: relative;
+  z-index: 70;
+  h2{
+    font-size: 48px;
+    font-weight:bold;
+    color: #000000;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      h2{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+.text-items-galery{
+  margin-top: 117px;
+  h3{
+    color: #090a0b;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight:bold;
+    position: relative;
+    z-index: 69;
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+    }
+  }
+}
+
+
+.ft-galery{
+  padding-top: 53px;
+  position: relative;
+  z-index: 69;
+  float: left;
+ h3{
+   font-size:16px;
+   line-height: 36px;
+   font-weight:400;
+ }
+ p{
+   font-size: 16px;
+   color: #090a0b;
+   line-height: 36px;
+ }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+      display: block;
+      float: none;
+    }
+  }
+}
+
+.change-block-galety{
+  margin-left: 212px;
+  float: left;
+  position: relative;
+  z-index: 69;
+  margin-top: -273px;
+  @if $adaptive == true {
+    @media (max-width: 1160px){
+      margin-left: 40px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+      display: block;
+      float: none;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.bg-block{
+  width: 593px;
+  height: 333px;
+  background-color: #2de5ec;
+  position: relative;
+  margin-left: 49px;
+  margin-top: -59px;
+  opacity: 0.12;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      display: none;
+    }
+  }
+}
 
 
 
 
+.galery-img{
+  li{
+    float: left;
+    width: 227px;
+    height: 168px;
+    margin: 0 2px;
+    position: relative;
+    cursor: pointer;
+    &:after{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,255,255,0.5);
+    }
+    &:hover{
+      box-shadow: 0 0px 15px rgba(0,0,0, 1);
+      &:after{
+        display: none;
+      }
+    }
+    img{
+      width: 100%;
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1616px){
+      li{
+        float: none;
+        display: inline-block;
+        margin: 0;
+        width: 200px;
+        height: 168px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1418px){
+      li{
+        float: none;
+        display: inline-block;
+        margin: 0;
+        width: 180px;
+        height: 168px;
+        img{
+          height: 168px;
+        }
+      }
+    }
+  }
+}
+
+.galert-projects-two{
+  .change-block-galety{
+    margin-left: 0;
+    margin-right: 46px;
+    margin-top: 112px;
+  }
+  .bg-block{
+    margin-left: 580px;
+    margin-top: 110px;
+
+  }
+  .text-items-galery{
+    margin-top: 146px;
+    float: right;
+    margin-right: 150px;
+  }
+  .ft-galery{
+
+  }
+  .galery-img{
+    position: relative;
+    margin-top: -185px;
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1200px){
+      .bg-block{
+        margin-left: 480px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1196px){
+      .change-block-galety{
+        margin-top: 110px;
+        margin-right: 20px;
+      }
+
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1090px){
+      .bg-block{
+        margin-left: 380px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1170px){
+      .text-items-galery{
+        margin-right: 125px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1145px){
+      .text-items-galery{
+        margin-right: 100px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 994px){
+      .change-block-galety{
+        margin-right: 20px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      .text-items-galery{
+        float: none;
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 
+.galery-projects-tree{
+  margin-top: 170px;
+  .change-block-galety{
+    margin-top: -60px;
+  }
+  .galery-img{
+    position: relative;
+    margin-top: -180px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
+}
 
 //ALWAYS END
 @import "sketches.scss";
