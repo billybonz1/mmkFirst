@@ -10,11 +10,15 @@ $hamburger-layer-color: #000;
 
 
 
-
+.galery-projects{
+  padding: 64px 45px 0 45px;
+  .number-abs{
+    top: 0;
+  }
+}
 
 
 .title-all{
-  margin-top: 64px;
   position: relative;
   z-index: 70;
   h2{
@@ -33,7 +37,7 @@ $hamburger-layer-color: #000;
     @media (max-width: 991px){
       padding-left: 0px;
       h2{
-        padding-left: 50px;
+        padding-left: 0px;
       }
     }
   }
@@ -94,7 +98,7 @@ $hamburger-layer-color: #000;
   h3{
     color: #090a0b;
     font-size: 30px;
-    line-height: 24px;
+    line-height: 35px;
     font-weight:bold;
     position: relative;
     z-index: 69;
@@ -156,7 +160,21 @@ $hamburger-layer-color: #000;
   float: left;
   position: relative;
   z-index: 69;
-  margin-top: -273px;
+  margin-top: -283px;
+  @if $adaptive == true {
+    @media (max-width: 1250px){
+      width: 45%;
+      margin-left: 175px;
+
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1223px){
+      width: 40%;
+      margin-left: 130px;
+
+    }
+  }
   @if $adaptive == true {
     @media (max-width: 1160px){
       margin-left: 40px;
@@ -270,6 +288,7 @@ $hamburger-layer-color: #000;
 }
 
 .galert-projects-two{
+  padding-top: 0;
   .change-block-galety{
     margin-left: 0;
     margin-right: 46px;
@@ -292,6 +311,34 @@ $hamburger-layer-color: #000;
     position: relative;
     margin-top: -185px;
 
+  }
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      .text-items-galery{
+        margin-right: 130px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1266px){
+      .change-block-galety{
+        margin-right: 0;
+      }
+      .bg-block{
+        margin-left: 400px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1220px){
+      .change-block-galety{
+        margin-right: 0;
+        width: 40%;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
   @if $adaptive == true {
     @media (max-width: 1200px){
@@ -397,6 +444,7 @@ $hamburger-layer-color: #000;
 
 .galery-projects-tree{
   margin-top: 170px;
+  padding-top: 0;
   .change-block-galety{
     margin-top: -60px;
   }
@@ -404,6 +452,11 @@ $hamburger-layer-color: #000;
     position: relative;
     margin-top: -180px;
 
+  }
+  @if $adaptive == true {
+    @media (max-width: 1320px){
+      margin-top: 0px;
+    }
   }
   @if $adaptive == true {
     @media (max-width: 991px){
@@ -419,5 +472,108 @@ $hamburger-layer-color: #000;
   }
 }
 
+
+
+.director{
+  background-color: #f5f2f2;
+  padding: 58px 45px 0 45px;
+  .title-all{
+    margin-top: 26px;
+  }
+  .number-abs{
+    top: 20px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1246px){
+      .forma-h{
+        margin-left: 15px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1233px){
+      .forma-h{
+        width: 30%;
+        p{
+          br{display: none}
+        }
+      }
+    }
+  }
+}
+.director-info{
+  text-align: center;
+}
+.c-tre{
+  display: inline-block;
+}
+
+
+.name-h{
+  float: left;
+  max-width: 230px;
+  text-align: right;
+  padding-top: 122px;
+  width: 100%;
+  h2{
+    font-size:24px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  p{
+    color: #7d7d7d;
+    font-size:15px;
+    line-height: 24px;
+    padding-top: 34px;
+  }
+}
+.foto-h{
+  float: left;
+  max-width: 464px;
+  margin-left: 15px;
+  margin-top: 45px;
+
+}
+.forma-h{
+  margin-top: 133px;
+  margin-left: 23px;
+  text-align: left;
+  float: left;
+  width: 35%;
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+  }
+  form{
+    padding-top: 50px;
+    input{
+      margin-top: 10px;
+      color: #000000;
+      border-bottom: 2px solid #000;
+      @include placeholder{
+        color: #000000;
+      }
+    }
+    button{
+      margin-left: 0;
+      margin-top: 57px;
+      &:hover{
+        color: #000;
+      }
+    }
+    #name{
+      background-image: url("../img/b-icon.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    #phone{
+      background-image: url("../img/b-icon2.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+  }
+}
 //ALWAYS END
 @import "sketches.scss";
