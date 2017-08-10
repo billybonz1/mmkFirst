@@ -449,3 +449,8 @@ header {
       float: none;
       display: inline-block;
       margin: 15px 15px; } }
+  @media (max-width: 522px) {
+    .proposal h3 {
+      left: 0;
+      top: 0;
+      display: block; } }

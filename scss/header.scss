@@ -554,7 +554,6 @@ header{
     color: #fff;
     line-height: 24px;
   }
-
   @if $adaptive == true {
     @media (max-width: 1245px){
       li{
@@ -580,6 +579,15 @@ header{
         float: none;
         display: inline-block;
         margin: 15px 15px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 522px){
+      h3{
+        left: 0;
+        top:0;
+        display: block;
       }
     }
   }
