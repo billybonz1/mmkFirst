@@ -16,11 +16,18 @@ $hamburger-layer-color: #000;
 .title-all{
   margin-top: 64px;
   position: relative;
-  z-index: 69;
+  z-index: 70;
   h2{
     font-size: 48px;
     font-weight:bold;
     color: #000000;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      h2{
+        margin-left: 50px;
+      }
+    }
   }
 }
 .text-items-galery{
@@ -32,6 +39,11 @@ $hamburger-layer-color: #000;
     font-weight:bold;
     position: relative;
     z-index: 69;
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+    }
   }
 }
 
@@ -51,12 +63,35 @@ $hamburger-layer-color: #000;
    color: #090a0b;
    line-height: 36px;
  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+      display: block;
+      float: none;
+    }
+  }
 }
 
 .change-block-galety{
   margin-left: 212px;
   float: left;
+  position: relative;
+  z-index: 69;
   margin-top: -273px;
+  @if $adaptive == true {
+    @media (max-width: 1160px){
+      margin-left: 40px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+      display: block;
+      float: none;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 .bg-block{
@@ -67,6 +102,11 @@ $hamburger-layer-color: #000;
   margin-left: 49px;
   margin-top: -59px;
   opacity: 0.12;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      display: none;
+    }
+  }
 }
 
 
@@ -98,13 +138,118 @@ $hamburger-layer-color: #000;
     img{
       width: 100%;
     }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1616px){
+      li{
+        float: none;
+        display: inline-block;
+        margin: 0;
+        width: 200px;
+        height: 168px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1418px){
+      li{
+        float: none;
+        display: inline-block;
+        margin: 0;
+        width: 180px;
+        height: 168px;
+        img{
+          height: 168px;
+        }
+      }
+    }
+  }
+}
+
+.galert-projects-two{
+  .change-block-galety{
+    margin-left: 0;
+    margin-right: 46px;
+    margin-top: 112px;
+  }
+  .bg-block{
+    margin-left: 580px;
+    margin-top: 110px;
+
+  }
+  .text-items-galery{
+    margin-top: 146px;
+    float: right;
+    margin-right: 150px;
+  }
+  .ft-galery{
+
+  }
+  .galery-img{
+    position: relative;
+    margin-top: -185px;
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1200px){
+      .bg-block{
+        margin-left: 480px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1196px){
+      .change-block-galety{
+        margin-top: 110px;
+        margin-right: 20px;
+      }
+
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1090px){
+      .bg-block{
+        margin-left: 380px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1170px){
+      .text-items-galery{
+        margin-right: 125px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 994px){
+      .change-block-galety{
+        margin-right: 20px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      .text-items-galery{
+        float: none;
+        margin-right: 0;
+      }
+    }
   }
 }
 
 
+.galery-projects-tree{
+  margin-top: 170px;
+  .change-block-galety{
+    margin-top: -60px;
+  }
+  .galery-img{
+    position: relative;
+    margin-top: -180px;
 
-
-
+  }
+}
 
 //ALWAYS END
 @import "sketches.scss";
