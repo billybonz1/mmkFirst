@@ -281,6 +281,10 @@
   .galert-projects-two .text-items-galery {
     margin-right: 125px; } }
 
+@media (max-width: 1145px) {
+  .galert-projects-two .text-items-galery {
+    margin-right: 100px; } }
+
 @media (max-width: 994px) {
   .galert-projects-two .change-block-galety {
     margin-right: 20px; } }

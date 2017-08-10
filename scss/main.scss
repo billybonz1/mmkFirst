@@ -222,6 +222,13 @@ $hamburger-layer-color: #000;
     }
   }
   @if $adaptive == true {
+    @media (max-width: 1145px){
+      .text-items-galery{
+        margin-right: 100px;
+      }
+    }
+  }
+  @if $adaptive == true {
     @media (max-width: 994px){
       .change-block-galety{
         margin-right: 20px;
