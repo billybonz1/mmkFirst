@@ -194,6 +194,9 @@
     .text-items-galery {
       text-align: center;
       margin-top: 30px; } }
+  @media (max-width: 382px) {
+    .text-items-galery h3 {
+      font-size: 22px; } }
 
 .ft-galery {
   padding-top: 53px;
@@ -489,6 +492,9 @@
       float: none;
       text-align: center;
       margin: 45px auto 0 auto; } }
+  @media (max-width: 650px) {
+    .foto-h img {
+      width: 100%; } }
 
 .forma-h {
   margin-top: 133px;

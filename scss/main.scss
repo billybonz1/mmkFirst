@@ -93,6 +93,7 @@ $hamburger-layer-color: #000;
     }
   }
 }
+
 .text-items-galery{
   margin-top: 117px;
   h3{
@@ -107,6 +108,13 @@ $hamburger-layer-color: #000;
     @media (max-width: 991px){
       text-align: center;
       margin-top: 30px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 382px){
+      h3{
+        font-size: 22px;
+      }
     }
   }
 }
@@ -572,6 +580,14 @@ $hamburger-layer-color: #000;
       float: none;
       text-align: center;
       margin: 45px auto 0 auto;
+
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 650px){
+      img{
+        width: 100%;
+      }
 
     }
   }
