@@ -185,8 +185,8 @@ $hamburger-layer-color: #000;
       text-align: center;
       display: block;
       float: none;
-      margin-top: 0;
-      margin-left: 0;
+      margin: 0 auto;
+      width: 100%;
     }
   }
   @if $adaptive == true {
@@ -500,6 +500,15 @@ $hamburger-layer-color: #000;
       }
     }
   }
+  @if $adaptive == true {
+    @media (max-width: 1154px){
+      .forma-h{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 }
 .director-info{
   text-align: center;
@@ -520,6 +529,18 @@ $hamburger-layer-color: #000;
     color: #000000;
     font-weight: bold;
     line-height: 30px;
+    position: relative;
+    &:after{
+      content: '“';
+      position: absolute;
+      left: 0;
+      top: 50px;
+      color: #2de5ec;
+      font-size: 136px;
+      font-weight: 400;
+      line-height: 24px;
+
+    }
   }
   p{
     color: #7d7d7d;
@@ -527,12 +548,33 @@ $hamburger-layer-color: #000;
     line-height: 24px;
     padding-top: 34px;
   }
+  @if $adaptive == true {
+    @media (max-width: 1154px){
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+      h2{
+        &:after{
+          left: -25px;
+        }
+      }
+    }
+  }
+
 }
 .foto-h{
   float: left;
   max-width: 464px;
   margin-left: 15px;
   margin-top: 45px;
+  @if $adaptive == true {
+    @media (max-width: 1154px){
+      float: none;
+      text-align: center;
+      margin: 45px auto 0 auto;
+
+    }
+  }
 
 }
 .forma-h{
@@ -574,6 +616,7 @@ $hamburger-layer-color: #000;
       background-repeat: no-repeat;
     }
   }
+
 }
 //ALWAYS END
 @import "sketches.scss";
